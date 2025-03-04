@@ -22,7 +22,8 @@ discord_bot = commands.Bot(command_prefix="!", intents=intents)
 bot_loop = None
 
 # 通知を送信するチャンネルID
-CHANNEL_ID = 1344821932792479815
+# 自身が使用するbotを入れたサーバーのメッセージチャットのチャンネルID
+CHANNEL_ID = 1234567890123456789
 
 
 # グローバル変数
@@ -61,7 +62,7 @@ async def send_message(message):
 
 def start_discord_bot():
     # Bot を実行
-    discord_bot.run("MTM0NDI4NDcyNjc3MjQ5ODQ5NA.GrZpSQ.MInm6ETryrm9Pcl8kN3GYvflED2-oGhFd_PPZU")
+    discord_bot.run("MTM0NDI4NDcyNjc3MjQ5ODQ5NA.GrZpSQ.MInm6ETryrm9Pcl8kN3GYvflED2-oGhFd_PPZU") # 自身が作成したbotのトークンを記入
 
 def send_discord_notification(message):
     try:
